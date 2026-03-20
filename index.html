@@ -27,106 +27,112 @@
                 margin: 20px;
                 font-weight: bold;
             }
-
-        /* Slider */
+        <style >
+        /* Slider frame (visible area) */
         #slider {
             overflow: hidden;
             width: 100%;
         }
 
-            #slider figure {
-                position: relative;
-                width: 300%;
-                margin: 0;
-                left: 0;
-                animation: 15s slider infinite;
-            }
+        /* Long strip holding all images */
+        #slider figure {
+            position: relative;
+            width: 500%; /* 5 images */
+            margin: 0;
+            left: 0;
+            animation: 15s slider infinite;
+        }
 
-                #slider figure img {
-                    width: 33.33%;
-                    float: left;
-                    height: 600px; /* adjust this */
-                    object-fit: cover;
-                }
+            /* Each image */
+            #slider figure img {
+                width: 20%; /* 100 / 5 */
+                float: left;
+                height: 600px;
+                object-fit: cover;
+            }
 
         /* Animation */
         @keyframes slider {
-
-            0% {
+            0%, 10% {
                 left: 0;
             }
 
-            30% {
-                left: 0;
-            }
-
-            35% {
+            20%, 30% {
                 left: -100%;
             }
 
-            60% {
-                left: -100%;
-            }
-
-            75% {
+            40%, 50% {
                 left: -200%;
             }
 
-            90% {
-                left: -200%;
+            60%, 70% {
+                left: -300%;
+            }
+
+            80%, 90% {
+                left: -400%;
             }
 
             100% {
-                left: 0%;
+                left: 0;
             }
-
         }
 
-        /* Footer */
-        footer {
-            margin-top: 40px;
+        /* Basic page styling */
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            text-align: center;
             padding: 20px;
-            background: #eee;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
         }
     </style>
-
 </head>
 
 <body>
 
     <header>
-
         <h1>NEW ORLEANS SAINTS</h1>
         <p>The best casual sports wear.</p>
 
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="contact.html">Contact</a> |
-            <a href="merchandise.html">Merchandise</a> |
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Merchandise</a>
         </nav>
-
     </header>
 
-    <main>
+    <div id="slider">
+        <figure>
+            <img src="https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/3859/files/2025/10/saints-secondary.jpg">
+            <img src="https://wallpapers.com/images/featured/new-orleans-saints-pictures-hmenx6zwbf36wbyy.jpg">
+            <img src="https://static.nike.com/a/images/w_1200,h_1200,c_fill,f_auto/5949f680-8aeb-4fe0-85e5-2aefbf778eb2/image.jpg">
+            <img src="https://gsp-image-cdn.wmsports.io/cms/prod/bleacher-report/ap_images/e2d4a8afc8bc4a479dc461fe6f1da9b3/Saints_Panthers_Football_55381_4000x2250_(0,285).jpg">
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/PWSFGWLQFYNZCTLWKEE6ARXB7U.jpg">
+        </figure>
+    </div>
 
-        <div id="slider">
-            <figure>
-                <img src="https://npr.brightspotcdn.com/dims4/default/6180de7/2147483647/strip/true/crop/960x960+0+0/resize/880x880!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwamc%2Ffiles%2F201811%2Fnew_orleans_saints.jpg">
-                <img src="https://s.yimg.com/ny/api/res/1.2/I0lApQ9CbfDeRVIsHuEDbg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNztjZj13ZWJw/https://media.zenfs.com/en/sb_nation_articles_115/c55e07942beb18f000a27cb42e48c9a1">
-                <img src="https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/3859/files/2025/10/saints-secondary.jpg">
-            </figure>
-        </div>
+</body>
+</html>
 
     </main>
 
-    <footer>
+<footer>
 
-        <p>&copy; 2025 Saints Republic</p>
-        <p>Visit <a href="https://github.com">GitHub</a> to learn more about coding.</p>
+    <p>&copy; 2025 Saints Republic</p>
+    <p>Visit <a href="https://github.com">GitHub</a> to learn more about coding.</p>
 
-    </footer>
+</footer>
 
 </body>
 
 </html>
+      
