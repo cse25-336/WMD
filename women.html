@@ -1,1 +1,108 @@
-<!DOCTYPE.html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Orleans Saints</title>
+<link rel="stylesheet" href="styles.css"
+
+
+    <style>
+
+        <style >
+        /* Slider frame (visible area) */
+        #slider {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        /* Long strip holding all images */
+        #slider figure {
+            position: relative;
+            width: 500%; /* 5 images */
+            margin: 0;
+            left: 0;
+            animation: 15s slider infinite;
+        }
+
+            /* Each image */
+            #slider figure img {
+                width: 20%; /* 100 / 5 */
+                float: left;
+                height: 600px;
+              object-fit: contain;
+            }
+
+        /* Animation */
+        @keyframes slider {
+            0%, 10% {
+                left: 0;
+            }
+
+            20%, 30% {
+                left: -100%;
+            }
+
+            40%, 50% {
+                left: -200%;
+            }
+
+            60%, 70% {
+                left: -300%;
+            }
+
+            80%, 90% {
+                left: -400%;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+
+        /* Basic page styling */
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>NEW ORLEANS SAINTS</h1>
+        <p>The best casual sports wear.</p>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="categories.html">Categories</a> |
+        </nav>
+    </header>
+
+    <div id="slider">
+        <figure>
+            <img src=https://www.foco.com/cdn/shop/products/PJSETNFONESCZNS_g3_1024x1024.jpg?v=1663654215"">
+            <img src="https://n.nordstrommedia.com/id/sr3/ced04aef-f49b-4712-a416-d2c855f47b76.jpeg?h=365&w=240&dpr=2">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.lfvWV5jxSE62qFUI8oP81gHaJQ?rs=1&pid=ImgDetMain&o=7&rm=3">
+            <img src="https://i.pinimg.com/736x/65/c3/75/65c375e420af5eed5ed1adb19875bf16.jpg">
+            <img src="https://i.pinimg.com/originals/fd/af/a4/fdafa4e55735bdf6d5bdf7815a366c89.jpg">
+        </figure>
+    </div>
+
+</body>
+</html>
+
