@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Orleans Saints</title>
+<link rel="stylesheet" href="styles.css"
+
+
+    <style>
+
+        <style >
+        /* Slider frame (visible area) */
+        #slider {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        /* Long strip holding all images */
+        #slider figure {
+            position: relative;
+            width: 500%; /* 5 images */
+            margin: 0;
+            left: 0;
+            animation: 15s slider infinite;
+        }
+
+            /* Each image */
+            #slider figure img {
+                width: 20%; /* 100 / 5 */
+                float: left;
+                height: 600px;
+                object-fit: contain;
+            }
+
+        /* Animation */
+        @keyframes slider {
+            0%, 10% {
+                left: 0;
+            }
+
+            20%, 30% {
+                left: -100%;
+            }
+
+            40%, 50% {
+                left: -200%;
+            }
+
+            60%, 70% {
+                left: -300%;
+            }
+
+            80%, 90% {
+                left: -400%;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+
+        /* Basic page styling */
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>NEW ORLEANS SAINTS</h1>
+        <p>The best casual sports wear.</p>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="categories.html">Categories</a> |
+        </nav>
+    </header>
+
+    <div id="slider">
+        <figure>
+            <img src="https://www.detroitgamegear.com/wp-content/uploads/2016/10/232160-WR-MF.jpg">
+            <img src="https://fanatics.frgimages.com/new-orleans-saints/mens-starter-black-new-orleans-saints-scout-i-full-snap-varsity-jacket_ss5_p-201450687+u-5vzvd37rcxafq4eiqkyv+v-e3glojlymo6oxny3lbhl.jpg?_hv=2&w=340">
+            <img src="https://media.kohlsimg.com/is/image/kohls/7448571_ALT?wid=390&hei=390&op_sharpen=1">
+            <img src="https://th.bing.com/th/id/R.b38c1b0f6a4610f7a7f651e7c4d48179?rik=gOf1OFSC9tclZQ&riu=http%3a%2f%2fwww.foco.com%2fcdn%2fshop%2ffiles%2fHDNFCBBLGPNS_p_1024x1024.jpg%3fv%3d1692688491&ehk=FmmEXMjmn5FuhMl4qH2Px3%2fGtR3Ls1384vKi6hM5L68%3d&risl=&pid=ImgRaw&r=0">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.VwsAIuVyme4cbojPs9TzVgHaHa?w=800&h=800&rs=1&pid=ImgDetMain&o=7&rm=3">
+        </figure>
+    </div>
+
+</body>
+</html>
+
 
