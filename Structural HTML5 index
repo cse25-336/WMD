@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasane National Park</title>
+</head>
+
+<body>
+
+    <header>
+        <figure id="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Kasane National Park Logo">
+            </a>
+        </figure>
+
+        <h1>KASANE NATIONAL PARK</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="accomodation.html">ACCOMODATION</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li>
+                <li><a href="get.html">WILDLIFE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section>
+            <h2>Connecting the people with nature</h2>
+            <a href="activities.html" id="btn">EXPLORE ACTIVITIES</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - 2026 KASANE NATIONAL PARK | ALL RIGHTS RESERVED</p>
+    </footer>
+
+</body>
+</html>
